@@ -28,3 +28,18 @@ nav li {
 nav ul {
     display: flex;
 }
+#home{
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+#home h1{
+    font-size:40px;
+    text-align: center;
+}
+#home #image{
+    height: auto;
+    width:100%;
+}
+.container{
+    text-align:center;
+}
