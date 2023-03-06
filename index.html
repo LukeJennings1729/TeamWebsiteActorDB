@@ -6,13 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!--Fonts-->
@@ -23,47 +18,153 @@
 
 <body>
     <header>
-        <nav class="container-fluid">
-            <ul class="nav-links">
-                <li class="col-sm-"><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#event">Event Results</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Ezster Kiss</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#events">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#contact">Contact</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     
 
     <main>
-    <div class="container-fluid" >
+    
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1 class="display-4 fw-bold text-primary">Physical education for a better future.</h1>
+            </div>
+        </div>
         <section id="home" class="col-sm-12">
-            <div>
-                <img id="image" src="swim.png" alt="swim">
+            <div class="justify-content-center">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="swim.png" class="d-block w-100" alt="First Slide">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="swim.png" class="d-block w-100" alt="Second Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="swim.png" class="d-block w-100" alt="Third Slide">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                
                 <p class="home-caption">Ezster Kiss</p>
             </div>
             
         </section>
-    </div>
-    <div class="container-fluid">
-    
-        <div class="row">
-            <div class="col-sm-4 text-center">
-                <h1>MY SWIM</h1>
-            </div>
-            <div class="col-sm-4 text-center">
-                <h1>MY BIKE</h1>
-            </div>
-            <div class="col-sm-4 text-center">
-                <h1>MY RUN</h1>
-            </div>
-        </div>
-    </div>
 
-    <div class="container-fluid">
+       
+    </div>
+   
+    <!-- Just to make each section conceptually easier to understand, will be divided into rows, regardless of how many columns of the grid the component takes up-->
+    <div class="container-fluid bg-light">
         <section id="about">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1  class="display-4 fw-bold text-primary">About Me</h1>
+                </div>
+                <p class=" lead text-center border border-primary">
+                    Hello! My name is Ezster Kiss and I am a Physical Education major at SUNY New Paltz and I'm looking to make the world a better place!
+               </p>
+            </div>
 
+            <div  class="row">
+                <div class="col-sm-4 text-center">
+                    <div class="card">
+                        <img class="card-img-top" src="womenphysed.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text"> I run a program for female athletes, teaching them all about issues that come up in women's sports. I also coach at a sports camp and do a lot of advocacy work for all students on the New Paltz campus.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-8">
+                    <p class="text-center">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim nam animi at quas quos consectetur dolorem fuga id, sequi asperiores ut! Sed consequuntur obcaecati tempore et, necessitatibus nemo velit iusto aliquam ut optio adipisci voluptas id nobis magni iure possimus impedit laudantium perspiciatis cupiditate earum maxime nulla architecto illum! Veritatis perferendis iure facilis vero quibusdam assumenda deserunt! Optio ea repellat sed ut illo praesentium, dolore esse vitae rem deserunt laudantium molestias voluptatum quo quia cum aut placeat, velit accusamus. Ducimus natus temporibus tempore ullam tempora enim corporis laborum aut possimus perspiciatis illo assumenda ipsum reprehenderit, cupiditate repudiandae? Laudantium libero deleniti sequi consectetur dicta molestias nam sunt, fugit ratione soluta, similique reprehenderit quidem ipsum veritatis cumque aliquid, aliquam quae voluptatibus dolores minus obcaecati! Vero nobis minus harum nulla amet esse, officia eligendi autem porro quos iusto sapiente, voluptatibus neque dolor asperiores? Corrupti reiciendis inventore deleniti impedit dicta dolorum, tenetur asperiores! Quas unde sunt, assumenda est pariatur error! Fuga voluptate esse harum at ipsam, voluptas, quos odio mollitia tenetur voluptatem molestiae perspiciatis eaque, ea eius vero. Saepe, tenetur illum! Possimus necessitatibus quasi explicabo ullam! Veniam quibusdam ipsam sapiente recusandae quos odio. Soluta reprehenderit praesentium ducimus voluptatum dolorum vero distinctio ullam unde delectus! Explicabo ab numquam dignissimos! Quae dolore optio tenetur mollitia inventore at? Delectus voluptas, distinctio aperiam quibusdam nemo, molestiae nobis accusamus fuga quaerat, sit qui alias deserunt ipsam nam amet vitae dolorum aspernatur beatae? Nulla deserunt eaque sunt inventore laboriosam aperiam!
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <div class="card">
+                        <img class="card-img-top" src="triathalon.jpeg" alt="">
+                        <div class="card-body">
+                          <p class="card-text">In my free time I like to participate in a variety of sports, one of being distance triathlons. In 2022 I finished my first Ironman triathlon at Lake Placid. </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-8">
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dignissimos dicta facilis. Sit pariatur facere iste modi, perspiciatis est quidem qui placeat ad reprehenderit! Quas eveniet fuga dicta perferendis laboriosam eligendi facilis vel beatae modi, autem earum voluptatum, magnam mollitia. Placeat recusandae dolores perspiciatis laborum amet nostrum dolorum culpa, voluptas itaque quaerat, est necessitatibus corporis, assumenda magnam distinctio sunt. Eius quibusdam adipisci pariatur? Autem impedit harum sit eligendi voluptatum modi vel, recusandae illum aut quos adipisci quod debitis optio hic facilis cum, non fugiat culpa incidunt ab quae. Repellat repudiandae doloribus culpa alias nemo ex odio animi vitae iste asperiores aperiam reprehenderit accusantium nam cumque et quis quibusdam laudantium sed voluptates voluptas maiores, eum temporibus aliquam magni! Ullam dicta earum iusto ipsam repellat quisquam quas voluptates ipsa consectetur velit aliquid, et voluptatem alias veritatis asperiores delectus sint temporibus quae quis beatae voluptatibus aliquam perferendis consequuntur. Voluptas nam deserunt, iusto possimus ipsa unde beatae? Est atque labore quo saepe quam. Explicabo, atque? Quibusdam non quis eveniet fugiat, repellendus adipisci quisquam, cumque ad sapiente modi id rem necessitatibus magnam! Earum, aliquid commodi in fugit officiis sapiente nesciunt consequatur voluptate nihil soluta consequuntur nisi excepturi. Illum consequuntur eum aliquam quas animi molestias modi?
+                    </p>
+                </div>
+                
+
+            </div>
+
+          
         </section>
     </div>
+
+    <div class="container-fluid bg-info">
+        <section id="events">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1  class="display-4 fw-bold text-primary">Event Info</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-fluid bg-dark">
+        <section id="contact">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1  class="display-4 fw-bold text-primary">Contact</h1>
+                </div>
+                <p class=" lead text-center border border-primary">
+                    
+               </p>
+            </div>
+        </section>
+    </div>
+    <!-- Here is the JavaScript link tag for Bootstrap 5 which is to be placed at the bottom of the body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
