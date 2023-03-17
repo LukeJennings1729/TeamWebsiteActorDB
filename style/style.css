@@ -17,6 +17,11 @@ img{
    margin-right: auto;
 }
 
+.caro-img {
+  max-width: 600px;
+  max-height: 400px;
+}
+
 #about-p {
   text-indent: 30px;
 }
